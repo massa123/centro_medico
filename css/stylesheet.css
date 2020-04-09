@@ -8,12 +8,12 @@ body{
    * Header General
   */
   .menu{
-    background-color: #000;
-    background-image: -webkit-linear-gradient(25deg, #000 300px, #C7262B 301px);
+    background-color: #fff;
+    background-image: -webkit-linear-gradient(25deg, #fff 300px, #C7262B 301px);
     color: #333333;
-      height: 90px;
-      top: 0;
-      left: 0;
+    height: 90px;
+    top: 0;
+    left: 0;
   }
   .logoheader{
     height: 90px;
@@ -413,7 +413,7 @@ body{
   footer{
     width: 100%;
     padding: 50px 0 50px 0;
-    background: #E0E0E0
+    background: #E0E0E0;
   }
   .wrapper_footer{
     width: 450px;

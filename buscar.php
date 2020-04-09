@@ -11,10 +11,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' && !empty($_GET['busqueda'])) {
     $busqueda = limpiarDatos($_GET['busqueda']);
 
     $statement = $conexion->prepare(
-        'SELECT * FROM articulos WHERE titulo LIKE :busqueda or texto LIke :busqueda'
+        'SELECT * FROM medicos WHERE nomrbre LIKE :busqueda or especialidad LIke :busqueda'
     );
     $statement->excecute(array(':busqueda' => "%$busqueda%"));
-    $resultados= statement->fetchAll();
+    $resultados = statement->fetchAll();
 
     if (empty($resultados)) {
         $titulos = 'No se encontraron articulos con el resultado: ' . $busqueda;
